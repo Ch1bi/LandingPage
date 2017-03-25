@@ -1,0 +1,95 @@
+/*resets*/
+
+* {
+margin: 0;
+padding: 0;
+
+}
+
+
+/*end resets*/
+
+body{
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #efefef;
+   
+}
+
+/*head container styles*/
+
+
+.head-container{
+    margin:2em;
+    background-color:white;
+    width:500px;
+   box-shadow: 10px 10px 5px #888888;
+    
+}
+
+.head-container img{
+    
+    align-self: center;
+    margin:1.5em;
+    border:2px solid white;
+}
+
+
+.heading h3{
+
+    margin-left:1.5em;
+}
+.heading h6{
+    align-self: flex-start;
+    margin: 0.5em 0 0 2.6em;
+}
+
+/*End head container styles*/
+
+/*Reasoning paragraph styles */
+
+.reason{
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.reason p{
+
+    width:250px;
+    word-wrap: break-word;
+    margin: 1.6em 0 0 0;
+    font-size:11px;
+}
+
+/*End Reason paragraph styles*/
+
+/*Social Media icon group */
+
+    .icons{
+
+        margin:0 0 1em 2em;
+    }
+
+/*End Social Media icon group*/
+/*Social Media hovers*/
+
+ .fa-github:hover{
+
+
+    font-size:16px;
+}
+
+.fa-behance:hover{
+
+    font-size:16px;
+}
+
+.fa-linkedin:hover{
+
+    font-size:16px;
+}
+
+
