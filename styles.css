@@ -21,9 +21,19 @@ padding: 0;
     height:400px;
 }
 
+@keyframes moveIn{
+
+    25%{
+
+        transform: translate(100px, 100px);
+    }
+}
+
+
 .first-page h1{
  
-   
+   animation-name: moveIn;
+   animation-duration: 2s;
    position: absolute;
    top:100px;
    left: 250px;
@@ -45,7 +55,6 @@ padding: 0;
     align-self: flex-start;
     font-family: 'Muli', sans-serif;
     font-weight: bold;  
-    /*color:#2BBEFE;*/
     color:white;
 
 }
@@ -101,6 +110,19 @@ padding: 0;
     height:300px;   
 }
 
+@keyframes spin{
+
+    50%{
+
+         transform: rotate(360deg);
+    }
+
+    100%{
+
+        transform:rotate(360deg);
+    }
+}
+
 .second-page h1{
 
     align-self: flex-end;
@@ -110,6 +132,13 @@ padding: 0;
     bottom:60px;
     right:100px;
 
+}
+
+.second-page h1:hover{
+
+    animation-name:spin;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }
 
 
@@ -133,14 +162,21 @@ padding: 0;
     margin-top:1em;
 }
 
+.favorite table:hover
+{
+
+    border-style: dashed;
+}
 .favorite table tr th{
 
-    color:#2BBEFE;
+    color:#EC7E22;
+    font-family: "Muli";
 }
 
 .favorite table tr td{
 
     color:white;
+    font-family: "Muli";
 }
 
 
@@ -155,15 +191,38 @@ padding: 0;
     height:300px;
 }
 
-/*Links styles*/
+@keyframes zoomIn{
+
+    50%{
+
+        transform: translate(100px);
+    }
+
+    75%{
+
+        transform:translate(-190px);
+    }
+
+
+}
 
 .third-page h1{
     align-self: center;
     color: dodgerblue;
     margin-top:1em;
 
-
 }
+
+.third-page h1:hover{
+
+    animation-name: zoomIn;
+    animation-duration: 1s;
+}
+
+/*End third page styles*/
+
+/*Links styles*/
+
 
 .links2{
 
@@ -184,8 +243,22 @@ padding: 0;
         align-self: center;
         margin:0 0 1em 2em;
        
-        
     }
+
+     .fa-github{
+
+         color:white;
+     }
+
+     .fa-behance{
+
+         color:white;
+     }
+
+     .fa-linkedin{
+
+         color:white;
+     }
 
 /*End Social Media icon group*/
 
@@ -194,17 +267,17 @@ padding: 0;
  .fa-github:hover{
 
 
-    font-size:16px;
+    background-color:dodgerblue;;
 }
 
 .fa-behance:hover{
 
-    font-size:16px;
+     background-color:dodgerblue;;
 }
 
 .fa-linkedin:hover{
 
-    font-size:16px;
+     background-color:dodgerblue;;
 }
 
 /*End Social Media hovers*/
